@@ -1,0 +1,13 @@
+name: IO-Digest
+version: 0.10
+abstract: Calculate digests while reading or writing
+author: Chia-liang Kao <clkao@clkao.org>
+license: perl
+distribution_type: module
+requires:
+  PerlIO::via::dynamic: 0.10
+  Digest: 0.0
+no_index:
+  directory:
+    - inc
+generated_by: Module::Install version 0.35
