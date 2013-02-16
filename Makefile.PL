@@ -1,19 +1,12 @@
-#!/usr/bin/perl
-
+sub readme_from {}; sub auto_include_deps {}; sub author_tests {}; sub auto_set_repository {};
+use strict;
 use inc::Module::Install;
-use 5.008;
 
-name		('IO-Digest');
-author		('Chia-liang Kao <clkao@clkao.org>');
-abstract_from	('lib/IO/Digest.pm');
-license		('perl');
-version_from	('lib/IO/Digest.pm');
+name 'IO-Digest';
+all_from 'lib/IO/Digest.pm';
 
-requires(
-        'PerlIO::via::dynamic'   => '0.10',
-        'Digest'		 => '0.0',
-);
-include('ExtUtils::AutoInstall');
-auto_install();
+requires 'PerlIO::via::dynamic'   => '0.10';
+requires 'Digest'		 => '0.0';
 
-WriteAll( sign => 1 );
+auto_set_repository;
+WriteAll;

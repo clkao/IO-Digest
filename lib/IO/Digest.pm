@@ -3,7 +3,7 @@ use 5.008;
 use strict;
 use warnings;
 use PerlIO::via::dynamic '0.10';
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 =head1 NAME
 
@@ -14,7 +14,8 @@ IO::Digest - Calculate digests while reading or writing
  use IO::Digest;
 
  # Get a Digest::MD5 object that takes input while $fh being written or read
- $iod = IO::Digest->new ($fh, 'MD5');
+ my $fh;
+ my $iod = IO::Digest->new ($fh, 'MD5');
 
  print $fh "fooo";
  print $iod->hexdigest
