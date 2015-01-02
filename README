@@ -3,7 +3,7 @@ while read or writing file handles.
 
 * Installation
 
-IO::Digest uses the stanard perl module install process:
+IO::Digest uses the standard perl module install process:
 
 % perl Makefile.PL
 % make
@@ -12,7 +12,7 @@ IO::Digest uses the stanard perl module install process:
 * Latest version
 
 The latest IO-Digest could be found on cpan or at:
-http://svn.clkao.org/svnweb/member/browse/clkao/modules/IO-Digest/
+https://github.com/clkao/IO-Digest
 
 * Copyright
 
