@@ -26,6 +26,16 @@ This module allows you to calculate digests while reading or writing
 file handles.  This avoids the case you need to reread the same
 content to compute the digests after written a file.
 
+=head1 METHODS
+
+=head2 $ctx = IO::Digest->new($fh, $digest_name)
+
+Constructs a Digest object that will be updated when input/output occurs on
+the filehandle.  Any installed Digest:: class can be used as the digest name.
+
+Note that the return value does not inherit from IO::Digest, but will be an
+instance of the Digest class you requested.
+
 =cut
 
 use Digest ();
