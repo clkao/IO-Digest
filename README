@@ -1,5 +1,10 @@
-This is the README file for IO::Digest, a module for computing digests
-while read or writing file handles.
+IO::Digest
+==========
+
+IO::Digest computes digests while read or writing file handles.
+
+[![Build Status](https://travis-ci.org/clkao/IO-Digest.svg?branch=master)](https://travis-ci.org/clkao/IO-Digest)
+[![Coverage Status](https://coveralls.io/repos/clkao/IO-Digest/badge.svg?branch=master)](https://coveralls.io/r/clkao/IO-Digest?branch=master)
 
 * Installation
 
