@@ -1,5 +1,6 @@
 sub readme_from {}; sub auto_include_deps {}; sub author_tests {}; sub auto_set_repository {};
 use strict;
+BEGIN { push @INC, "." unless grep $_ eq ".", @INC };
 use inc::Module::Install;
 
 name 'IO-Digest';
